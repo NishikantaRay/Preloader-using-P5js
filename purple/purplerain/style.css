@@ -6,7 +6,7 @@ body {
   height: 100%;
   margin: 0;
   overflow: hidden;
-  background: linear-gradient(to bottom, #202020, #111119);
+  background: linear-gradient(to bottom, #8b2222, #111119);
 }
 
 .rain {
@@ -164,3 +164,27 @@ body.single-toggle .drop {
 body.single-toggle .drop:nth-child(10) {
   display: block;
 }
+
+/* @import url(https://fonts.googleapis.com/css?family=Oswald);
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+} */
+
+body {
+  background-color: #efefef;
+  background: radial-gradient(rgb(204, 115, 115), rgb(200, 200, 200));
+}
+
+svg {
+  opacity: 0;
+  overflow: visible;
+  position: absolute;
+  left: 50%;
+  top: 53%;
+  transform: translate(-50%, -50%);
+}
+

@@ -6,7 +6,7 @@ body {
   height: 100%;
   margin: 0;
   overflow: hidden;
-  background: linear-gradient(to bottom, #8b2222, #111119);
+  background: linear-gradient(to bottom, #20283B, #111119);
 }
 
 .rain {
@@ -165,26 +165,48 @@ body.single-toggle .drop:nth-child(10) {
   display: block;
 }
 
-/* @import url(https://fonts.googleapis.com/css?family=Oswald);
-html,
-body {
-  width: 100%;
-  height: 100%;
-  padding: 0px;
-  margin: 0px;
-} */
-
-body {
-  background-color: #efefef;
-  background: radial-gradient(rgb(204, 115, 115), rgb(200, 200, 200));
-}
 
 svg {
-  opacity: 0;
-  overflow: visible;
   position: absolute;
   left: 50%;
-  top: 53%;
+  top: 50%;
   transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
+.scene1 .bg {
+  fill: #349597;
+}
+.scene1 .ground {
+  fill: #FCDC9F;
+}
+.scene1 .sky1 {
+  fill: #F6DA71;
+}
+.scene1 .sky2 {
+  fill: #F06B4B;
+}
+.scene1 .sky3 {
+  fill: #E9214F;
+}
+.scene1 .tree-left {
+  fill: #49934E;
+}
+.scene1 .tree-right {
+  fill: #3D7C42;
+}
+.scene1 .mountain-left {
+  fill: #44557E;
+}
+.scene1 .mountain-right {
+  fill: #384668;
+}
+.scene1 .mountain-top-left {
+  fill: #ffffff;
+}
+.scene1 .mountain-top-right {
+  fill: #BBBBBB;
+}

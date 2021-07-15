@@ -8,21 +8,88 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>p5js</title>
   </head>
   <body class="back-row-toggle splat-toggle">
     <div class="rain front-row"></div>
     <div class="rain back-row"></div>
-    <div class="toggles">
+    <!-- <div class="toggles">
       <div class="splat-toggle toggle active">SPLAT</div>
       <div class="back-row-toggle toggle active">BACK<br>ROW</div>
       <div class="single-toggle toggle">SINGLE</div>
-    </div>
+    </div> -->
+    <svg viewBox="0 0 500 500">
+      <g class="scene1">
+        <defs>
+          <clipPath id="circle">
+            <circle class="mask" cx="250" cy="250" r="100" />
+          </clipPath>
+          <clipPath id="ground">
+            <rect x="50" y="50" width="400" height="260" />
+          </clipPath>
+        </defs>
+      
+        <g clip-path="url(#circle)">
+          <rect class="bg" x="0" y="0" width="500" height="500" />
+          
+          <g clip-path="url(#ground)">
+            <rect class="sky3" x="50" y="130" width="350" height="70" />
+            <rect class="sky2" x="50" y="200" width="350" height="50" />
+            <rect class="sky1" x="50" y="250" width="350" height="50" />
+           
+            <g class="mountain" transform="translate(150 185)">
+              <polygon class="mountain-left" points="100,0 100,120 0,120" />
+              <polygon class="mountain-right" points="100,0 200,120 100,120" />
+              <polygon class="mountain-top-left" points="100,0 100,30 75,30" />
+              <polygon class="mountain-top-right" points="100,0 125,30 100,30" />
+            </g>
+          </g>
+          
+          <g class="tree tree1" transform="translate(150 255)">
+            <polygon class="tree-left" points="15,0 15,50 0,50" />
+            <polygon class="tree-right" points="15,0 15,50 30,50" />
+          </g>
+          
+          <g class="tree tree2" transform="translate(180 255)">
+            <polygon class="tree-left" points="15,0 15,50 0,50" />
+            <polygon class="tree-right" points="15,0 15,50 30,50" />
+          </g>
+          
+          <g class="tree tree3" transform="translate(210 255)">
+            <polygon class="tree-left" points="15,0 15,50 0,50" />
+            <polygon class="tree-right" points="15,0 15,50 30,50" />
+          </g>
+          
+          <g class="tree tree4" transform="translate(240 255)">
+            <polygon class="tree-left" points="15,0 15,50 0,50" />
+            <polygon class="tree-right" points="15,0 15,50 30,50" />
+          </g>
+          
+          <g class="tree tree5" transform="translate(270 255)">
+            <polygon class="tree-left" points="15,0 15,50 0,50" />
+            <polygon class="tree-right" points="15,0 15,50 30,50" />
+          </g>
+          
+          <g class="tree tree6" transform="translate(300 255)">
+            <polygon class="tree-left" points="15,0 15,50 0,50" />
+            <polygon class="tree-right" points="15,0 15,50 30,50" />
+          </g>
+          
+          <g class="tree tree7" transform="translate(330 255)">
+            <polygon class="tree-left" points="15,0 15,50 0,50" />
+            <polygon class="tree-right" points="15,0 15,50 30,50" />
+          </g>
     
-    <script src="script.js"></script>
+          <rect class="ground" x="100" y="300" width="350" height="10" />
+        </g>
+      </g>
+    </svg>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>
